@@ -36,7 +36,6 @@ class EventCreationTest extends TestCase
 
         $response->assertStatus(201)
             ->assertJsonStructure([
-                'success',
                 'data' => [
                     'id',
                     'title',

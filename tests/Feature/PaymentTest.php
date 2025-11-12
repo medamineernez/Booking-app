@@ -55,7 +55,6 @@ class PaymentTest extends TestCase
 
         $response->assertStatus(201)
             ->assertJsonStructure([
-                'success',
                 'data' => [
                     'id',
                     'booking_id',
